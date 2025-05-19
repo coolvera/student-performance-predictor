@@ -37,3 +37,11 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Deploy to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HRKU-AAUHsQr-rQoXg3Ku8B-BlPcLbw5Wn1TLiPR9FNMoASLg_____wz7kFV3nkUv }}
+          heroku_app_name: ${{ secrets.ana680-midterm-part2}}
+
+          usedocker: false
+    
